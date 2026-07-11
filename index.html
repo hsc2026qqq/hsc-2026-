@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+<html lang="bn"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Protected Image</title>
+<style>body{font-family:Arial;background:#111;color:#fff;display:flex;justify-content:center;align-items:center;height:100vh;margin:0}.box{background:#222;padding:20px;border-radius:12px;text-align:center;width:320px}input,button{padding:10px;width:100%;margin-top:10px;box-sizing:border-box}img{display:none;width:100%;margin-top:15px;border-radius:10px}</style></head>
+<body><div class="box"><h2>Protected Page</h2><p>Enter password to view the image.</p><input type="password" id="pw" placeholder="Password"><button onclick="check()">Open</button><p id="msg"></p><img id="photo" src="FB_IMG_1783170543736.jpg"></div>
+<script>
+function check(){if(document.getElementById("pw").value==="i love m"){document.getElementById("photo").style.display="block";document.getElementById("msg").innerHTML="";}else{document.getElementById("msg").innerHTML="Wrong password!";}}
+</script></body></html>
